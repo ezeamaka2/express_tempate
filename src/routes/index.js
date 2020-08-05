@@ -1,10 +1,9 @@
-const express = require("express");
+import express from "express";
+
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  return res.status(200).json({
-    message: "Welcome to express app",
-  });
-});
+router.get("/", (req, res) => res.status(200).json({
+  message: "Welcome to ES6 express app",
+}));
 
-module.exports = router;
+export default router;
